@@ -1,14 +1,5 @@
 {
-  "producto": [
-    {
-      "name": "AluraAlura",
-      "imageUrl": "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
-      "price": "1",
-      "id": 1,
-      "alt": "Product",
-      "section": "Star Wars",
-      "description": "alterado de novo"
-    },
+  "produto": [
     {
       "name": "Alura latam",
       "imageUrl": "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
@@ -17,13 +8,14 @@
       "description": ""
     },
     {
-      "name": "bic",
+      "name": "Flash",
       "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp",
-      "price": "10",
-      "id": 7
+      "price": "10000",
+      "id": 7,
+      "description": "undefined"
     },
     {
-      "name": "Cuidado!",
+      "name": "Capitão America",
       "imageUrl": "https://m.media-amazon.com/images/I/51aqEMfw9KL._AC_SY879_.jpg",
       "price": "123",
       "id": 8,
@@ -32,8 +24,9 @@
     {
       "name": "Super Man",
       "imageUrl": "https://juguetesdecoleccion.com/wp-content/uploads/muneco-superman-funko-pop.jpg",
-      "price": "20",
-      "id": 14
+      "price": "20000",
+      "id": 14,
+      "description": "undefined"
     },
     {
       "name": "Darth Vader",
@@ -44,7 +37,7 @@
     {
       "name": "Flash",
       "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_643523-MLA49180554005_022022-O.webp",
-      "price": "25,99",
+      "price": "30000",
       "id": 16,
       "description": "25"
     },
@@ -121,6 +114,12 @@
       "imageUrl": "https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2021/07/05/36-redsoc-geek-01-07-2021.png",
       "price": "1651652",
       "id": 31
+    },
+    {
+      "name": "Sky Walker",
+      "imageUrl": "https://geekfanaticos.fbitsstatic.net/img/p/funko-pop-finn-309-the-rise-of-skywalker-a-ascencao-skywalker-star-wars-70146/256629-2.jpg?w=540&h=540&v=no-change&qs=ignore",
+      "price": "1236",
+      "id": 33
     }
   ]
 }
