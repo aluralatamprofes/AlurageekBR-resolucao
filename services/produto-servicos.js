@@ -50,7 +50,7 @@ const alteraProduto = async (id, name, price, description) => {
 };
 
 // DELETE
-const deleteProducto = async (id) => {
+const deleteProduto = async (id) => {
   return await fetch(`http://localhost:3000/produto/${id}`, {
     method: "DELETE",
     headers: {
@@ -64,5 +64,5 @@ export const produtoServices = {
   listarUmProduto,
   criaProdutos,
   alteraProduto,
-  deleteProducto,
+  deleteProduto,
 };
