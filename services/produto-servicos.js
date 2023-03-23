@@ -1,18 +1,18 @@
 //GET
 const listaProdutos = () =>
-  fetch("http://localhost:3000/producto")
+  fetch("http://localhost:3000/produto")
     .then((resposta) => resposta.json())
     .catch((error) => console.log(error));
 
 const listarUmProduto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`).then((resposta) => {
+  return fetch(`http://localhost:3000/produto/${id}`).then((resposta) => {
     return resposta.json();
   });
 };
 
 //POST
 const criaProdutos = (name, imageUrl, price) => {
-  return fetch(`http://localhost:3000/producto`, {
+  return fetch(`http://localhost:3000/produto`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -32,7 +32,7 @@ const criaProdutos = (name, imageUrl, price) => {
 
 // PUT/PATCH
 const alteraProduto = async (id, name, price, description) => {
-  return fetch(`http://localhost:3000/producto/${id}`, {
+  return fetch(`http://localhost:3000/produto/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -51,7 +51,7 @@ const alteraProduto = async (id, name, price, description) => {
 
 // DELETE
 const deleteProducto = async (id) => {
-  return await fetch(`http://localhost:3000/producto/${id}`, {
+  return await fetch(`http://localhost:3000/produto/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
