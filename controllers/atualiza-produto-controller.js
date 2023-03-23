@@ -6,13 +6,13 @@ const id = getURL.searchParams.get("id");
 
 const inputImageUrl = document.querySelector("[data-url]");
 const inputNome = document.querySelector("[data-nome]");
-const inputPrecio = document.querySelector("[data-preco]");
+const inputPreco = document.querySelector("[data-preco]");
 const inputDescripcion = document.querySelector("[data-descricao]");
 
 produtoServices.listarUmProduto(id).then((dados) => {
   inputImageUrl.setAttribute("src", dados.imageUrl);
   inputNome.value = dados.name;
-  inputPrecio.value = dados.price;
+  inputPreco.value = dados.price;
   inputDescripcion.value = dados.description;
 });
 
@@ -25,7 +25,7 @@ formulario.addEventListener("submit", (evento) => {
     .alteraProduto(
       id,
       inputNome.value,
-      inputPrecio.value,
+      inputPreco.value,
       inputDescripcion.value
     )
     .then(() => {
