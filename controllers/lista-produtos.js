@@ -38,7 +38,7 @@ produtos.addEventListener("click", async (evento) => {
     const produto = evento.target.closest("[data-id]");
     let id = produto.dataset.id;
     produtoServices
-      .deleteProducto(id)
+      .deleteProduto(id)
       .then((res) => {
         produto.remove();
         console.log(res);
